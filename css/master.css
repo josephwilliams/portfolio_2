@@ -1,0 +1,74 @@
+body {
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.app-container {
+  background: #eaeaea;
+  background: linear-gradient(135deg, rgba(57,88,153,1) 0%, rgba(0,248,255,1) 100%);
+}
+
+.content {
+  height: 1000px;
+  background: #f1f1f1;
+}
+
+.header {
+  margin: 0 auto;
+  height: 80px;
+  width: 100%;
+  background: #fff;
+  /* transition: height 1s ease-out; */
+  /*border-bottom: 1px solid grey;*/
+}
+
+.header-scroll {
+  margin: 0 auto;
+  height: 25px;
+  width:100%;
+  background: #fff;
+  transition: height 0.3s ease-out;
+  /*border-bottom: 1px solid grey;*/
+  position: fixed;
+  top: 0;
+}
+
+.profile {
+
+}
+
+.profile .content {
+  background: white;
+  margin-top: 90px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile .content .left {
+
+}
+
+.profile .content .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  display: inline-block;
+  align-items: center;
+  max-width: 400px;
+}
+
+.skill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 17px;
+  padding: 8px;
+  margin: 5px;
+  height: 20px;
+}
