@@ -195,7 +195,7 @@ h2 {
   width: 90px;
 }
 
-.link-note {
+.link {
   padding: 5px 10px;
   cursor: pointer;
   transition: all 1.2s ease;
@@ -203,7 +203,7 @@ h2 {
   font-size: 17px;
 }
 
-.link-note:hover {
+.link:hover {
   padding: 5px 10px;
   cursor: pointer;
   background: #f1f1f1;
@@ -211,6 +211,16 @@ h2 {
   padding-bottom: 15px;
   font-size: 19px;
   transition: 0.2s font-size ease;
+}
+
+.link-active {
+  padding: 5px 10px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding-bottom: 15px;
+  transition: all 1.2s ease;
+  max-width: 90px;
+  font-size: 17px;
 }
 
 #panel-container {
@@ -318,7 +328,7 @@ h2 {
 }
 
 .contact .contact-blurb a:hover {
-  color: rgb(78, 115, 203);
+  color: rgb(7, 172, 157);
   font-size: 19px;
   transition: 0.2s all ease;
 }
@@ -339,10 +349,11 @@ h2 {
 .contact-form textarea {
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
-  width: 396px;
+  width: 380px;
   height: 220px;
   outline: none;
   margin-bottom: 5px;
+  padding: 10px;
 }
 
 .contact-form input[type="submit"] {
