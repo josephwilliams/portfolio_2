@@ -27,11 +27,11 @@ export default class Resume extends React.Component {
   render () {
     return (
       <div className="resume">
-        <div className="left">
-          {this.skills()}
+        <div className="blurb">
+          Hi! I'm Joseph and I'm a front-end web developer living in San Francisco.
+          I'm currently seeking full time employment.
         </div>
-        <div className="right">
-        </div>
+        {this.skills()}
       </div>
     )
   }

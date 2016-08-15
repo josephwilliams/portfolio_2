@@ -135,19 +135,24 @@ h2 {
   transition: 0.3s all ease;
 }
 
-.profile {
+.resume {
   height: 500px;
-  width: 600px;
+  width: 625px;
   border-top: 1px solid #eaeaea;
 }
 
-.profile .content .left {
-}
-
-.profile .content .right {
+.resume .blurb {
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  margin-top: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 500px;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 5px;
 }
 
 .skills-container {
@@ -155,8 +160,9 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 25px;
+  padding: 25px;
   border-bottom: 1px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
 }
 
 .skills {
@@ -206,15 +212,12 @@ h2 {
 }
 
 /*BOX*/
-
 #center {
   width: 200px;
   position: absolute;
   margin-left: -150px;
   margin-top: -120px;
   z-index: -1;
-  /*animation: levitate 8s infinite ease-in-out;
-  -webkit-animation: levitate 8s infinite ease-in-out;*/
 }
 
 .panels {
@@ -266,20 +269,6 @@ h2 {
   -webkit-transform: skewY(30deg);
 }
 
-@keyframes levitate
-{
-  0%   {top:15%;}
-  50%  {top:20%;}
-  100% {top:15%;}
-}
-
-@-webkit-keyframes levitate /* Safari and Chrome */
-{
-  0%   {top:30%;}
-  50%  {top:35%;}
-  100% {top:30%;}
-}
-
 .portfolio {
   height: 500px;
   width: 625px;
@@ -287,12 +276,6 @@ h2 {
 }
 
 .contact {
-  height: 500px;
-  width: 625px;
-  border-top: 1px solid #eaeaea;
-}
-
-.resume {
   height: 500px;
   width: 625px;
   border-top: 1px solid #eaeaea;
