@@ -15,9 +15,6 @@ class Sidebar extends React.Component {
     return (
       <div className="sidebar">
         <div className="links">
-          <div className="link-note" onClick={this.linkTo('profile')}>
-            profile
-          </div>
           <div className="link-note" onClick={this.linkTo('portfolio')}>
             projects
           </div>
@@ -26,9 +23,6 @@ class Sidebar extends React.Component {
           </div>
           <div className="link-note" onClick={this.linkTo('contact')}>
             contact
-          </div>
-          <div className="link-note">
-            blog
           </div>
         </div>
         <Icons />

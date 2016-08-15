@@ -11,7 +11,6 @@ var hashHistory = ReactRouter.hashHistory;
 
 //Components
 import App from './components/app';
-import Profile from './components/profile';
 import Resume from './components/resume';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
@@ -19,8 +18,7 @@ import Contact from './components/contact';
 const routes = (
   <Router history={hashHistory} >
     <Route path="/" component={App} >
-      <IndexRoute component={Profile} />
-      <Route path="profile" component={Profile} />
+      <IndexRoute component={Portfolio} />
       <Route path="portfolio" component={Portfolio} />
       <Route path="resume" component={Resume} />
       <Route path="contact" component={Contact} />

@@ -8,22 +8,20 @@ export default class Icons extends React.Component {
   render () {
     return (
       <div className="icons">
-        <a href="github.com/josephwilliams">
+        <a href="http://github.com/josephwilliams">
           <div className="icon">
             <i className="fa fa-github-square fa-2x" aria-hidden="true"></i>
               <div className="url">
-                github.com/
-                josephwilliams
+                github
               </div>
           </div>
         </a>
 
-        <a href="linkedin.com/in/jwilli12">
+        <a href="http://linkedin.com/in/jwilli12">
           <div className="icon">
             <i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
               <div className="url">
-                linkedin.com/in/
-                jwilli12
+                linkedin
               </div>
           </div>
         </a>
@@ -32,8 +30,7 @@ export default class Icons extends React.Component {
           <div className="icon">
             <i className="fa fa-angellist fa-2x" aria-hidden="true"></i>
               <div className="url">
-                angel.co/joseph-
-                williams-8
+                angelList
               </div>
           </div>
         </a>
