@@ -1,16 +1,21 @@
-import React, {Component} from 'react';
-import Scroll, {Link, Element} from 'react-scroll';
+import React from 'react';
 import Header from './header';
-import Profile from './profile'
+import Sidebar from './sidebar';
+import Panels from './panels';
 
 export default class App extends React.Component {
+  constructor () {
+    super();
+  }
 
   render () {
     return (
       <div className="app-container">
         <Header />
         <div className="content">
-          <Profile />
+          <Panels />
+          <Sidebar />
+          {this.props.children}
         </div>
       </div>
     );

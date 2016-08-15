@@ -4,9 +4,9 @@ export default class Profile extends React.Component {
   skills () {
     let skills = ['Ruby', 'Rails', 'Javascript', 'React', 'Flux', 'Redux',
                   'HTML', 'CSS', 'PostgreSQL', 'Git', 'JQuery', 'RSPEC', 'Nodal'];
-    let skillItems = skills.map(skill => {
+    let skillItems = skills.map((skill, id) => {
       return (
-        <div className="skill">
+        <div className="skill" key={id}>
           {skill}
         </div>
       );
@@ -22,15 +22,14 @@ export default class Profile extends React.Component {
   render () {
     return (
       <div className="profile">
-        <div className="content">
-          <div className="left">
-            <div className="blurb">
-              Hi! Im Joseph Williams.  Im a front end web developer.
-            </div>
-          </div>
-          <div className="right">
+        <div className="left">
+          <div className="blurb">
             {this.skills()}
           </div>
+        </div>
+        <div className="right">
+
+
         </div>
       </div>
     )
