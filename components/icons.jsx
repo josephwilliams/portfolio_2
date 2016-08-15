@@ -26,11 +26,11 @@ export default class Icons extends React.Component {
           </div>
         </a>
 
-        <a href="https://angel.co/joseph-williams-8">
+        <a href="mailto:me@josephwilliams.io">
           <div className="icon">
-            <i className="fa fa-angellist fa-2x" aria-hidden="true"></i>
+            <i className="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
               <div className="url">
-                angelList
+                email
               </div>
           </div>
         </a>

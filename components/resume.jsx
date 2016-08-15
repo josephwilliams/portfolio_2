@@ -28,8 +28,8 @@ export default class Resume extends React.Component {
     return (
       <div className="resume">
         <div className="blurb">
-          Hi! I'm Joseph and I'm a front-end web developer living in San Francisco.
-          I'm currently seeking full time employment.
+          Hello World! My name is <div className="red">Joseph</div> and I'm a web developer with a passion for <div className="red">front-end</div> design.
+          I currently reside in <div className="red">San Francisco</div>, California and am seeking full time employment.
         </div>
         {this.skills()}
       </div>

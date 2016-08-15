@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
   overflow: visible;
+  min-width: 888px;
 }
 
 .app-container {
@@ -25,12 +26,12 @@ body {
   font-size: 41px;
   margin: 0 auto;
   max-width: 900px;
-  display: flex;
-  align-items: flex-start;
+  justify-content: center;
   padding-bottom: 15px;
   display: flex;
   flex-direction: column;
   position: relative;
+  left: 110px;
   cursor: default;
 }
 
@@ -142,17 +143,18 @@ h2 {
 }
 
 .resume .blurb {
-  font-family: 'Lora', serif;
-  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
   margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 500px;
   margin: auto;
   padding-top: 25px;
   padding-bottom: 5px;
+}
+
+.resume .blurb .red {
+  display: inline;
+  color: #c26f6f;
 }
 
 .skills-container {
@@ -211,12 +213,11 @@ h2 {
   transition: 0.2s font-size ease;
 }
 
-/*BOX*/
-#center {
+#panel-container {
   width: 200px;
-  position: absolute;
-  margin-left: -150px;
   margin-top: -120px;
+  position: relative;
+  left: 40px;
   z-index: -1;
 }
 
@@ -279,4 +280,91 @@ h2 {
   height: 500px;
   width: 625px;
   border-top: 1px solid #eaeaea;
+}
+
+.contact-form {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .contact-blurb {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.contact .contact-blurb .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .contact-blurb a {
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(203, 78, 78);
+  text-decoration: none;
+  transition: 0.2s all ease;
+}
+
+.contact .contact-blurb a:hover {
+  color: rgb(78, 115, 203);
+  font-size: 19px;
+  transition: 0.2s all ease;
+}
+
+.contact-form input[type="text"] {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  width: 400px;
+  height: 30px;
+  border-bottom: 1px solid grey;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 5px;
+  outline: none;
+}
+
+.contact-form textarea {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  width: 396px;
+  height: 220px;
+  outline: none;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="submit"] {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  width: 403px;
+  height: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  margin-bottom: 5px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px lightgrey;
+  background: linear-gradient(135deg, rgb(255, 207, 207) 0%, rgba(112, 255, 242, 0.7) 100%);
+}
+
+.contact-form input[type="submit"]:hover {
+  background: linear-gradient(135deg, rgb(255, 180, 180) 0%, rgba(70, 255, 238, 0.7) 100%);
+}
+
+.contact-form input[type="submit"]:active {
+  background: linear-gradient(135deg, rgb(255, 212, 180) 0%, rgba(70, 255, 191, 0.7) 100%);
 }
