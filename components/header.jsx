@@ -10,8 +10,7 @@ export default class Header extends React.Component {
   render () {
     return (
       <div className="header">
-        <div className="top-left">
-        </div>
+        <div className="bg-grey-square"/>
         <h1>Joseph Williams</h1>
         <h2>web developer</h2>
         <LastTrack />
