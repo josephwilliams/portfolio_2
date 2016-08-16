@@ -10,13 +10,13 @@ class Sidebar extends React.Component {
   componentDidMount () {
     let location = window.location.hash;
     let current;
-    
-    if (location.includes('portfolio')) {
-      current = 'portfolio';
-    } else if (location.includes('resume')) {
+
+    if (location.includes('resume')) {
       current = 'resume';
     } else if (location.includes('contact')) {
       current = 'contact';
+    } else {
+      current = "portfolio"; // default without hash history
     }
 
     this.setState({ active: current });

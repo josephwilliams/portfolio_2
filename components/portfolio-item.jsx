@@ -1,52 +1,56 @@
 import React from 'react';
 
-export default class PortFolioItem extends React.Component {
+export default class PortfolioItem extends React.Component {
   constructor (props) {
     super(props);
+    this.state = { infoClass: "info-hidden" };
   }
 
-  tasks () {
-    let list;
-    list = this.props.tasks.map((duty, id) => {
+  showInfo () {
+    this.setState ({ infoClass: "info-show" });
+  }
+
+  codebase () {
+    let codebase;
+    codebase = this.props.codebase.map((code, id) => {
       return (
-        <li key={id}>{duty}</li>
-      )
+        <div className="skill" key={id}>
+          {code}
+        </div>
+      );
     });
 
     return (
-      <ul>
-        {list}
-      </ul>
-    );
+      <div className="skills">
+        {codebase}
+      </div>
+    )
   }
 
   render () {
     return (
-      <div className="row">
-        <div className="img">
-          <img src={this.props.imgUrl}
-               style={{width:50}}></img>
-        </div>
-        <div className="text">
-          <div className="top">
-            <div className="name">
-              {this.props.name} &nbsp;&nbsp;
-              <div className="title">
-                {this.props.title}
-              </div>
-            </div>
-            <div className="other-info">
-              {this.props.time} &nbsp;&nbsp;
-              <div className="location">
-                {this.props.location}
-              </div>
-            </div>
-            <div className="bottom">
-              {this.tasks()}
-            </div>
+    <div className="portfolio-item">
+      <div className="image">
+        <img src={this.props.imageUrl}></img>
+
+        <div className={this.state.infoClass}>
+          <div className="title">
+            {this.props.tile}
+          </div>
+          <div className="links">
+            <a href={this.props.githubUrl}>github</a>
+            <a href={this.props.liveUrl}>live</a>
+          </div>
+          <div className="description">
+            {this.props.description}
+          </div>
+          <div className="codebase">
+            {this.codebase()}
           </div>
         </div>
+
       </div>
+    </div>
     );
   }
 }

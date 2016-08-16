@@ -1,5 +1,5 @@
 import React from 'react';
-import Item from './portfolio-item';
+import Item from './resume-item';
 
 export default class Resume extends React.Component {
   skills () {
