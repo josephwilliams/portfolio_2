@@ -72,7 +72,7 @@ export default class Resume extends React.Component {
               location={"Barcelona, Spain"}
               time={"August 2013 - June 2014"}
               imgUrl={"images/resume/ibei.png"}
-              tasks={['Thesis analyzed the role of the Internet in increasing social capital for individuals and groups with a focus on immigrant communities']}
+              tasks={['Thesis analyzed the role of the Internet in social capital development for individuals and groups with a focus on immigrant communities']}
         />
         <Item name={"University of Maryland"}
               title={"Bachelor's, History, Honors"}
