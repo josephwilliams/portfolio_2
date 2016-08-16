@@ -425,12 +425,11 @@ h2 {
 
 .portfolio-item .image .info {
   position: absolute;
-  z-index: 2;
   top: 0px;
   width: 625px;
   height: 260px;
   opacity: 0;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 .portfolio-item .image .info:hover {
@@ -443,7 +442,7 @@ h2 {
   background: rgba(24, 24, 24, 0.91);
   color: rgba(255,255,255,0.83);
   opacity: 1.0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   padding: 10px 20px;
   cursor: default;
 }

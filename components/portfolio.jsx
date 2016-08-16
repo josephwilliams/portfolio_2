@@ -40,7 +40,7 @@ export default class Portfolio extends React.Component {
               codebase={['Ruby on Rails', 'Ruby', 'Active Record', 'SQL']}
         />
       <Item title={"Portfolio (beta)"}
-              liveUrl={"http://josephwilliams.github.io/JW"}
+              liveUrl={"http://josephwilliams.github.io/JW/"}
               githubUrl="http://github.com/josephwilliams/JW"
               imageUrl="images/portfolio/portfolio0_item.png"
               description="first go at a personal portfolio site, built with React"

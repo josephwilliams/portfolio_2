@@ -21998,7 +21998,7 @@
 	          codebase: ['Ruby on Rails', 'Ruby', 'Active Record', 'SQL']
 	        }),
 	        _react2.default.createElement(_portfolioItem2.default, { title: "Portfolio (beta)",
-	          liveUrl: "http://josephwilliams.github.io/JW",
+	          liveUrl: "http://josephwilliams.github.io/JW/",
 	          githubUrl: 'http://github.com/josephwilliams/JW',
 	          imageUrl: 'images/portfolio/portfolio0_item.png',
 	          description: 'first go at a personal portfolio site, built with React',
