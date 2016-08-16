@@ -1,14 +1,9 @@
 import React from 'react';
 
 export default class PortfolioItem extends React.Component {
-  constructor (props) {
-    super(props);
-    this.state = { infoClass: "info-hidden" };
-  }
-
-  showInfo () {
-    this.setState ({ infoClass: "info-show" });
-  }
+  // constructor (props) {
+  //   super(props);
+  // }
 
   codebase () {
     let codebase;
@@ -33,13 +28,15 @@ export default class PortfolioItem extends React.Component {
       <div className="image">
         <img src={this.props.imageUrl}></img>
 
-        <div className={this.state.infoClass}>
-          <div className="title">
-            {this.props.tile}
-          </div>
-          <div className="links">
-            <a href={this.props.githubUrl}>github</a>
-            <a href={this.props.liveUrl}>live</a>
+        <div className="info">
+          <div className="top">
+            <div className="title">
+              {this.props.title}
+            </div>
+            <div className="links">
+              <a href={this.props.githubUrl}>github</a>
+              <a href={this.props.liveUrl}>live</a>
+            </div>
           </div>
           <div className="description">
             {this.props.description}

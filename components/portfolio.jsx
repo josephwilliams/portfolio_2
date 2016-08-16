@@ -30,7 +30,7 @@ export default class Portfolio extends React.Component {
               liveUrl={"http://josephwilliams.github.io/react_minesweeper"}
               githubUrl="http://github.com/josephwilliams/react_minesweeper"
               imageUrl="images/portfolio/minesweeper_item.png"
-              description="an operant Minesweeper built with React and Javascript"
+              description="classic Minesweeper built with React and Javascript"
               codebase={['React', 'Javascript', 'HTML', 'CSS']}
         />
       <Item title={"Active Record Lite"}

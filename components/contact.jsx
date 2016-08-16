@@ -14,13 +14,9 @@ export default class Contact extends React.Component {
     return (
       <div className="contact">
         <div className="contact-blurb">
-          <div className="left">
             email me at <a href="mailto:me@josephwilliams.io">me@josephwilliams.io</a>
-            or use the form below.
-          </div>
-          <div className="right">
-            <i className="fa fa-map-signs fa-2x" aria-hidden="true"></i>
-          </div>
+            or use the form
+            <i className="fa fa-envelope fa-3x" aria-hidden="true"></i>
         </div>
         <form action="https://formspree.io/me@josephwilliams.io"
               method="POST"
