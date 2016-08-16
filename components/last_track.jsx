@@ -7,7 +7,7 @@ export default class LastTrack extends React.Component {
   }
 
   getLastTrack () {
-    $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=josephwilli12&api_key=739683b331d66f3219c4e0ceac5f9806&format=json&limit=1&callback=?", (data) => {
+    $.getJSON("https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=josephwilli12&api_key=739683b331d66f3219c4e0ceac5f9806&format=json&limit=1&callback=?", (data) => {
       let lastTrack = data.recenttracks.track[0];
       this.setState({ trackName: lastTrack.name,
                         trackArtist: lastTrack.artist["#text"] });

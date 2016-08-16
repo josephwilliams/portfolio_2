@@ -1,10 +1,6 @@
 import React from 'react';
 
 export default class PortfolioItem extends React.Component {
-  // constructor (props) {
-  //   super(props);
-  // }
-
   codebase () {
     let codebase;
     codebase = this.props.codebase.map((code, id) => {
