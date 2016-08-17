@@ -72,8 +72,8 @@ export default class Resume extends React.Component {
               location={"Barcelona, Spain"}
               time={"August 2013 - June 2014"}
               imgUrl={"images/resume/ibei.png"}
-              tasks={['Studied International Relations, focusing on international political systems, schools of thought within international relations, global economics, and security studies.',
-                      'My thesis dealt with the nuances of social capital development in relation to Internet use, particularly among immigrant communities, given that Internet utilization has become culturally ubiquitous.'
+              tasks={['Studied International Relations, focusing on international political systems, schools of thought within international relations, global economics, and security studies',
+                      'My thesis dealt with the nuances of social capital development in relation to Internet use, particularly among immigrant communities, given that Internet utilization has become culturally ubiquitous'
                       ]}
         />
         <Item name={"University of Maryland"}
@@ -81,7 +81,7 @@ export default class Resume extends React.Component {
               location={"College Park, Maryland"}
               time={"August 2009 - June 2013"}
               imgUrl={"images/resume/umd.jpg"}
-              tasks={['Studied cultural histories, e.g. of American since the Revolutionary Period, the Ancient Mediterranean World, World Wars, and social issues.']}
+              tasks={['Studied cultural histories, e.g. of American since the Revolutionary Period, the Ancient Mediterranean World, World Wars, and social issues']}
         />
       </div>
     )
