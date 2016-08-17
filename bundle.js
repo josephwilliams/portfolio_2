@@ -21695,10 +21695,10 @@
 	    value: function getLastTrack() {
 	      var _this2 = this;
 	
-	      $.getJSON("https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=josephwilli12&api_key=739683b331d66f3219c4e0ceac5f9806&format=json&limit=1&callback=?", function (data) {
-	        var lastTrack = data.recenttracks.track[0];
+	      $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=josephwilli12&api_key=739683b331d66f3219c4e0ceac5f9806&limit=1&period=7day&format=json", function (data) {
+	        var lastTrack = data.toptracks.track[0];
 	        _this2.setState({ trackName: lastTrack.name,
-	          trackArtist: lastTrack.artist["#text"] });
+	          trackArtist: lastTrack.artist.name });
 	      });
 	    }
 	  }, {
